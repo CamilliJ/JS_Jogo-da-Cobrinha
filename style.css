@@ -1,19 +1,70 @@
-#snake{
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Silkscreen:wght@400;700&display=swap');
+
+
+.main{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
+
+h1{
+    font-size: 70px;
+    font-family: 'DynaPuff', cursive;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: green;
+}
+
 #perdeu{
+    z-index: 2;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 100px;
-    width: 100px;
+    width: 40%;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: aqua;
     display: none;
     align-items: center;
     justify-content: center;
-    
+    flex-direction: column;
+    background-color: rgb(220, 248, 198);
+
+}
+
+.cobrinha{
+    width: 150px;
+}
+
+.perdeu{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'DynaPuff', cursive;
+}
+
+#dark{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.666);
+    display: none;
+}
+
+
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(1, 116, 1);
+    padding: 10px 30px;
+    margin-top: 30px;
 }
